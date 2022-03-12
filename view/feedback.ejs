@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>ToDoList</title>
+<link rel="stylesheet" href="../css/home.css">
+
+<style>
+h1{
+	margin:30px;
+		font-family: 'Oswald', sans-serif;
+		font-size: 40px;
+
+}
+.box{
+	border-radius: 33px;
+    border:2px solid gray;
+    padding: 20px;
+    width: 38%;
+	}
+input[type=textname],textarea
+{
+	width:100%;
+	font-size: 15px;
+	padding: 6px;
+}
+.label-name{
+	font-size:25px;
+		font-family: 'Oswald', sans-serif;
+
+	margin: 6px 0;
+}
+input[type=submit] {
+	background-color:white;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 9px 23px;
+    font-size: 18px;
+    font-weight: bold;
+font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif
+
+}
+</style>
+</head>
+<body >
+<nav class="navbar-contact" style="background-color:black">
+		<ul class="nav-list">
+				<div class="logo" ><img src="../css/logo.jpg" alt="logo" ></div>
+				<li><a href="/">Home</a></li>
+		</ul>
+		<div class="rightNav" style="text-align:right">
+		
+		</div>
+		
+	</nav>
+	<center>
+	<h1>Feedback</h1>
+	<div class="box" ">
+	<form >
+		 
+            <div class="label-name"align="left"><label> Name</label></div>
+			<input type="textname" name="fullname" required>
+          
+		  <div class="label-name" align="left">
+			<label>E-mail</label></div>
+            <input type="textname" name="E-mail" id="email" required>
+          <div class="label-name" align="left">
+		  <label>Message </label></div>
+          <textarea name="message" rows="8" cols="30"></textarea>
+          <input type="submit" name="submit" value="Submit" onclick="verifyform()">
+			
+
+	</form>
+	</div>
+	
+	</center>
+	<script src="webscript.js">
+		</script>
+</body>
+</html>
